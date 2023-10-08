@@ -1,0 +1,351 @@
+/*   CSS DU HEARDER    */
+header
+{
+	left: 0;
+	right: 0;
+	height: 100px;
+	padding: 1%;
+	display: flex;
+	background: #000000;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	color: white;
+}
+
+header > div
+{
+	width: 50%;
+}
+.head
+{
+	position: relative;
+}
+
+.logo
+{
+	text-align: center;
+	height: 100%;
+}
+
+.logo img
+{
+	width: auto;
+	height: 100%;
+}
+
+.categorie
+{
+	height: 100%;
+}
+
+.categorie label, #ham
+{
+	display: none;
+}
+
+.categorie_nav
+{
+	display: flex;
+	align-items: stretch;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 100%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style-type: none;
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+li a {
+    
+    color: white;
+    padding: 16px 14px;
+    text-decoration: none;
+    width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 10%;
+	
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(199, 23, 23);
+}
+
+.active {
+    background-color: #d4baba;
+}
+
+h1{
+    font-size:25px;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    
+}
+
+header a{
+	color: white;
+    text-decoration: none;
+}
+
+
+/*  CSS DU BODY   */
+
+body{
+    background-color:rgb(255, 255, 255);
+    font-family:verdana, sans-serif;
+    font-size:12px;
+    font:sans-serif;
+    margin:0px;
+    Color:rgb(0, 0, 0);
+}
+
+h2{
+    font-size:18px;
+    padding: 12px;
+    text-align: left;
+    margin: 20px;
+    padding: 5px;
+    
+}
+
+/*  CSS DU FOOTER   */
+
+footer{
+    width:100%;
+    padding-top:150px;
+    
+}
+
+.footerdiv{
+    color: white;
+    display:inline-block;
+    position:relative;
+    background-color:rgb(0, 0, 0);
+    width:100%;
+    padding-top:0px;
+    height:100px;
+    justify-content: space-evenly;
+}
+
+footer a
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+
+
+/*Article premiere page*/
+
+.Articles{
+    width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 52px;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.Articles article{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    background-color: rgba(160, 158, 158,0.3);
+}
+
+.Articles article img{
+    width: 350px;
+    height: 350px;
+}
+
+.left{
+    height: auto;
+    width: 345px;
+}
+
+.grilles{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 180px 120px;
+    margin-left: 200px;
+
+}
+
+.grilles > button {
+   
+    border:2px solid;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+
+}
+
+.grilles > button:first-child{
+    grid-row: 1/3;
+}
+
+.centrer{
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 0;
+}
+
+/* Formulaire*/
+.formulaire{
+    width:50%;
+    background-color: rgba(0, 0, 0,0.4);
+    color: white;
+    margin:auto;
+    margin-top: 10%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+form div{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    margin: 20px 0;
+}
+
+form div input{
+    border: 1px inset rgb(145, 145, 156);
+    background-color: rgba(255, 255, 255);
+    border-radius: 3px ; 
+}
+
+form div input.error
+{
+	border: 2px inset red;
+    background-color: red;
+    text-transform: uppercase;
+}
+
+form div textarea.error{
+    border: 2px inset red;
+    background-color: red;
+    text-transform:uppercase;
+}
+form div label.error{
+    color: red;
+    text-transform: uppercase;
+}
+
+form  button{
+  
+    background-color: rgb(190, 35, 35);
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px  rgba(0, 0, 0,0.3);
+}
+
+form button:hover{
+    background-color:#d4baba;
+}
+
+form button:active{
+    background-color:#d4baba;
+    box-shadow: none;
+}
+
+/*Astuce nettoyage*/
+.astuce{
+    width:50%;
+    font-weight: bold;
+    color: rgb(7, 7, 7);
+    margin:auto;
+    margin-top: 10%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input, textarea
+{
+	border: 1px inset black;
+	border-radius: 5px;
+	outline: none;
+}
+
+
+
+/*Button section*/
+.button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+  }
+  
+.button4:hover {background-color: #e7e7e7;}
+
+
+
+/*Responsivité*/
+@media screen and (max-width:992px) {
+
+    .Articles article img{
+        display: block;
+        margin: auto;
+        max-width: 500px;
+    }
+
+    .Articles{
+        display: flex;
+        flex-direction: column;
+        max-width: 700px;
+    }
+
+    .Articles article{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Articles > article > img{
+        display: block;
+        margin: auto;
+        max-width: 300px;
+        transform: scale(0.5);
+    }
+
+    .Articles{
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+    }
+
+    .Articles article{
+        text-align: center;
+    }
+}
+
+
+#commentaires{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 180px 120px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    gap:25px;
+    overflow-y: scroll;
+    max-height: 75vh;
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+
+    
